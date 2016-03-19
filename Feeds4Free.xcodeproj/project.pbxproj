@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08B60496C819C8EA0AE5C1EB /* libPods-Feeds4Free.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1369B40E6C26FE1083F8EBA4 /* libPods-Feeds4Free.a */; };
+		4703FC8D1C9ABA0C00D7617E /* JDXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703FC8C1C9ABA0C00D7617E /* JDXMLParser.m */; };
+		4703FC901C9AD2A500D7617E /* JDFeedItemTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703FC8F1C9AD2A500D7617E /* JDFeedItemTableProvider.m */; };
+		4703FC961C9ADC4F00D7617E /* JDFeedItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703FC951C9ADC4F00D7617E /* JDFeedItemCell.m */; };
+		47051A991C99F4F700C338F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051A981C99F4F700C338F9 /* main.m */; };
+		47051A9C1C99F4F700C338F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051A9B1C99F4F700C338F9 /* AppDelegate.m */; };
+		47051AA21C99F4F700C338F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47051AA01C99F4F700C338F9 /* Main.storyboard */; };
+		47051AA41C99F4F700C338F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47051AA31C99F4F700C338F9 /* Assets.xcassets */; };
+		47051AA71C99F4F700C338F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47051AA51C99F4F700C338F9 /* LaunchScreen.storyboard */; };
+		47051AB01C99F7FB00C338F9 /* RSS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47051AAE1C99F7FB00C338F9 /* RSS.xcdatamodeld */; };
+		47051AC21C99FA4E00C338F9 /* JDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC11C99FA4E00C338F9 /* JDFeedViewController.m */; };
+		47051AC51C99FA6900C338F9 /* JDFeedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC41C99FA6900C338F9 /* JDFeedItemViewController.m */; };
+		47051AC81C99FA8E00C338F9 /* JDPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC71C99FA8E00C338F9 /* JDPreviewViewController.m */; };
+		47051ACB1C99FA9E00C338F9 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */; };
+		47051AD31C99FF3E00C338F9 /* JDBaseTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AD21C99FF3E00C338F9 /* JDBaseTableProvider.m */; };
+		47051AD61C99FF6100C338F9 /* JDFeedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AD51C99FF6100C338F9 /* JDFeedTableProvider.m */; };
+		47051ADC1C9A039F00C338F9 /* JDFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051ADB1C9A039F00C338F9 /* JDFeedCell.m */; };
+		47051AFD1C9A04E000C338F9 /* Feed+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AF61C9A04E000C338F9 /* Feed+CoreDataProperties.m */; };
+		47051AFE1C9A04E000C338F9 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AF81C9A04E000C338F9 /* Feed.m */; };
+		47051AFF1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AFA1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m */; };
+		47051B001C9A04E000C338F9 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AFC1C9A04E000C338F9 /* FeedItem.m */; };
+		47051B051C9A075B00C338F9 /* JDCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051B041C9A075B00C338F9 /* JDCoreDataHelper.m */; };
+		4705ADBE1C9C3EEB00B50048 /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4705ADC01C9C3EEB00B50048 /* Localize.strings */; };
+		4705ADC71C9C3FF500B50048 /* JDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705ADC61C9C3FF500B50048 /* JDBaseCell.m */; };
+		4705ADCC1C9C407E00B50048 /* NSString+DateFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705ADCB1C9C407E00B50048 /* NSString+DateFormats.m */; };
+		47F76D001C9B1920009F4C1F /* JDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F76CFF1C9B1920009F4C1F /* JDBaseTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1369B40E6C26FE1083F8EBA4 /* libPods-Feeds4Free.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feeds4Free.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4703FC8B1C9ABA0C00D7617E /* JDXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDXMLParser.h; sourceTree = "<group>"; };
+		4703FC8C1C9ABA0C00D7617E /* JDXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDXMLParser.m; sourceTree = "<group>"; };
+		4703FC8E1C9AD2A500D7617E /* JDFeedItemTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedItemTableProvider.h; sourceTree = "<group>"; };
+		4703FC8F1C9AD2A500D7617E /* JDFeedItemTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedItemTableProvider.m; sourceTree = "<group>"; };
+		4703FC941C9ADC4F00D7617E /* JDFeedItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedItemCell.h; sourceTree = "<group>"; };
+		4703FC951C9ADC4F00D7617E /* JDFeedItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedItemCell.m; sourceTree = "<group>"; };
+		47051A941C99F4F700C338F9 /* Feeds4Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feeds4Free.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47051A981C99F4F700C338F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47051A9A1C99F4F700C338F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47051A9B1C99F4F700C338F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47051AA11C99F4F700C338F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47051AA31C99F4F700C338F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47051AA61C99F4F700C338F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47051AA81C99F4F700C338F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47051AAF1C99F7FB00C338F9 /* RSS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSS.xcdatamodel; sourceTree = "<group>"; };
+		47051AC01C99FA4E00C338F9 /* JDFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedViewController.h; sourceTree = "<group>"; };
+		47051AC11C99FA4E00C338F9 /* JDFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedViewController.m; sourceTree = "<group>"; };
+		47051AC31C99FA6900C338F9 /* JDFeedItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedItemViewController.h; sourceTree = "<group>"; };
+		47051AC41C99FA6900C338F9 /* JDFeedItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedItemViewController.m; sourceTree = "<group>"; };
+		47051AC61C99FA8E00C338F9 /* JDPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPreviewViewController.h; sourceTree = "<group>"; };
+		47051AC71C99FA8E00C338F9 /* JDPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPreviewViewController.m; sourceTree = "<group>"; };
+		47051AC91C99FA9E00C338F9 /* UIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		47051AD11C99FF3E00C338F9 /* JDBaseTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseTableProvider.h; sourceTree = "<group>"; };
+		47051AD21C99FF3E00C338F9 /* JDBaseTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseTableProvider.m; sourceTree = "<group>"; };
+		47051AD41C99FF6100C338F9 /* JDFeedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedTableProvider.h; sourceTree = "<group>"; };
+		47051AD51C99FF6100C338F9 /* JDFeedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedTableProvider.m; sourceTree = "<group>"; };
+		47051ADA1C9A039F00C338F9 /* JDFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedCell.h; sourceTree = "<group>"; };
+		47051ADB1C9A039F00C338F9 /* JDFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedCell.m; sourceTree = "<group>"; };
+		47051AF51C9A04E000C338F9 /* Feed+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Feed+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47051AF61C9A04E000C338F9 /* Feed+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Feed+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47051AF71C9A04E000C338F9 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		47051AF81C9A04E000C338F9 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		47051AF91C9A04E000C338F9 /* FeedItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FeedItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47051AFA1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FeedItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47051AFB1C9A04E000C338F9 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		47051AFC1C9A04E000C338F9 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		47051B031C9A075B00C338F9 /* JDCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCoreDataHelper.h; sourceTree = "<group>"; };
+		47051B041C9A075B00C338F9 /* JDCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCoreDataHelper.m; sourceTree = "<group>"; };
+		4705ADBA1C9C3E4900B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4705ADBB1C9C3E4900B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4705ADBF1C9C3EEB00B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localize.strings; sourceTree = "<group>"; };
+		4705ADC11C9C3EEC00B50048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localize.strings; sourceTree = "<group>"; };
+		4705ADC51C9C3FF500B50048 /* JDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseCell.h; sourceTree = "<group>"; };
+		4705ADC61C9C3FF500B50048 /* JDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseCell.m; sourceTree = "<group>"; };
+		4705ADCA1C9C407E00B50048 /* NSString+DateFormats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormats.h"; sourceTree = "<group>"; };
+		4705ADCB1C9C407E00B50048 /* NSString+DateFormats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormats.m"; sourceTree = "<group>"; };
+		47F76CFE1C9B1920009F4C1F /* JDBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseTableViewController.h; sourceTree = "<group>"; };
+		47F76CFF1C9B1920009F4C1F /* JDBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseTableViewController.m; sourceTree = "<group>"; };
+		CDF3844A96201CCFB1875BF4 /* Pods-Feeds4Free.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feeds4Free.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feeds4Free/Pods-Feeds4Free.release.xcconfig"; sourceTree = "<group>"; };
+		F9E32A13082839EA221793C6 /* Pods-Feeds4Free.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feeds4Free.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feeds4Free/Pods-Feeds4Free.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47051A911C99F4F700C338F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B60496C819C8EA0AE5C1EB /* libPods-Feeds4Free.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47051A8B1C99F4F700C338F9 = {
+			isa = PBXGroup;
+			children = (
+				47051A961C99F4F700C338F9 /* Feeds4Free */,
+				47051A971C99F4F700C338F9 /* Supporting Files */,
+				47051A951C99F4F700C338F9 /* Products */,
+				CFCFC5FC6A36E8C31EDBAB36 /* Pods */,
+				DB3119EFAFF06F7A528BDB7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47051A951C99F4F700C338F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47051A941C99F4F700C338F9 /* Feeds4Free.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47051A961C99F4F700C338F9 /* Feeds4Free */ = {
+			isa = PBXGroup;
+			children = (
+				47051A9A1C99F4F700C338F9 /* AppDelegate.h */,
+				47051A9B1C99F4F700C338F9 /* AppDelegate.m */,
+				4705ADB81C9C38EA00B50048 /* View */,
+				47051ACC1C99FAA400C338F9 /* Controller */,
+				47051ABD1C99F97F00C338F9 /* Model */,
+				47051AD71C99FF6400C338F9 /* Tables */,
+				4705ADB91C9C390100B50048 /* Helpers */,
+			);
+			path = Feeds4Free;
+			sourceTree = "<group>";
+		};
+		47051A971C99F4F700C338F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47051A981C99F4F700C338F9 /* main.m */,
+				47051AA31C99F4F700C338F9 /* Assets.xcassets */,
+				47051AA51C99F4F700C338F9 /* LaunchScreen.storyboard */,
+				47051AA81C99F4F700C338F9 /* Info.plist */,
+				4705ADC01C9C3EEB00B50048 /* Localize.strings */,
+			);
+			name = "Supporting Files";
+			path = Feeds4Free;
+			sourceTree = "<group>";
+		};
+		47051ABD1C99F97F00C338F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47051AAE1C99F7FB00C338F9 /* RSS.xcdatamodeld */,
+				47051B011C9A04E500C338F9 /* Feed */,
+				47051B021C9A04E900C338F9 /* Feed Item */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		47051ACC1C99FAA400C338F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F76CFE1C9B1920009F4C1F /* JDBaseTableViewController.h */,
+				47F76CFF1C9B1920009F4C1F /* JDBaseTableViewController.m */,
+				47051ACD1C99FAB500C338F9 /* Feed */,
+				47051ACE1C99FABA00C338F9 /* Feed Items */,
+				47051ACF1C99FAC500C338F9 /* Preview */,
+				47051AD01C99FAD000C338F9 /* Web */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		47051ACD1C99FAB500C338F9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				47051AC01C99FA4E00C338F9 /* JDFeedViewController.h */,
+				47051AC11C99FA4E00C338F9 /* JDFeedViewController.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		47051ACE1C99FABA00C338F9 /* Feed Items */ = {
+			isa = PBXGroup;
+			children = (
+				47051AC31C99FA6900C338F9 /* JDFeedItemViewController.h */,
+				47051AC41C99FA6900C338F9 /* JDFeedItemViewController.m */,
+			);
+			name = "Feed Items";
+			sourceTree = "<group>";
+		};
+		47051ACF1C99FAC500C338F9 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				47051AC61C99FA8E00C338F9 /* JDPreviewViewController.h */,
+				47051AC71C99FA8E00C338F9 /* JDPreviewViewController.m */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
+		47051AD01C99FAD000C338F9 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				47051AC91C99FA9E00C338F9 /* UIWebViewController.h */,
+				47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		47051AD71C99FF6400C338F9 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				47051AD81C99FF6C00C338F9 /* Base */,
+				47051AD91C99FF7000C338F9 /* Feed */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		47051AD81C99FF6C00C338F9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				47051AD11C99FF3E00C338F9 /* JDBaseTableProvider.h */,
+				47051AD21C99FF3E00C338F9 /* JDBaseTableProvider.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		47051AD91C99FF7000C338F9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				47051AD41C99FF6100C338F9 /* JDFeedTableProvider.h */,
+				47051AD51C99FF6100C338F9 /* JDFeedTableProvider.m */,
+				4703FC8E1C9AD2A500D7617E /* JDFeedItemTableProvider.h */,
+				4703FC8F1C9AD2A500D7617E /* JDFeedItemTableProvider.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		47051B011C9A04E500C338F9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				47051AF51C9A04E000C338F9 /* Feed+CoreDataProperties.h */,
+				47051AF61C9A04E000C338F9 /* Feed+CoreDataProperties.m */,
+				47051AF71C9A04E000C338F9 /* Feed.h */,
+				47051AF81C9A04E000C338F9 /* Feed.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		47051B021C9A04E900C338F9 /* Feed Item */ = {
+			isa = PBXGroup;
+			children = (
+				47051AF91C9A04E000C338F9 /* FeedItem+CoreDataProperties.h */,
+				47051AFA1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m */,
+				47051AFB1C9A04E000C338F9 /* FeedItem.h */,
+				47051AFC1C9A04E000C338F9 /* FeedItem.m */,
+			);
+			name = "Feed Item";
+			sourceTree = "<group>";
+		};
+		4705ADB71C9C38DD00B50048 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4705ADC51C9C3FF500B50048 /* JDBaseCell.h */,
+				4705ADC61C9C3FF500B50048 /* JDBaseCell.m */,
+				4705ADC81C9C404E00B50048 /* Feed */,
+				4705ADC91C9C405800B50048 /* Feed Item */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4705ADB81C9C38EA00B50048 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4705ADB71C9C38DD00B50048 /* Cells */,
+				47051AA01C99F4F700C338F9 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4705ADB91C9C390100B50048 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47051B031C9A075B00C338F9 /* JDCoreDataHelper.h */,
+				47051B041C9A075B00C338F9 /* JDCoreDataHelper.m */,
+				4703FC8B1C9ABA0C00D7617E /* JDXMLParser.h */,
+				4703FC8C1C9ABA0C00D7617E /* JDXMLParser.m */,
+				4705ADCA1C9C407E00B50048 /* NSString+DateFormats.h */,
+				4705ADCB1C9C407E00B50048 /* NSString+DateFormats.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4705ADC81C9C404E00B50048 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				47051ADA1C9A039F00C338F9 /* JDFeedCell.h */,
+				47051ADB1C9A039F00C338F9 /* JDFeedCell.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		4705ADC91C9C405800B50048 /* Feed Item */ = {
+			isa = PBXGroup;
+			children = (
+				4703FC941C9ADC4F00D7617E /* JDFeedItemCell.h */,
+				4703FC951C9ADC4F00D7617E /* JDFeedItemCell.m */,
+			);
+			name = "Feed Item";
+			sourceTree = "<group>";
+		};
+		CFCFC5FC6A36E8C31EDBAB36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E32A13082839EA221793C6 /* Pods-Feeds4Free.debug.xcconfig */,
+				CDF3844A96201CCFB1875BF4 /* Pods-Feeds4Free.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB3119EFAFF06F7A528BDB7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1369B40E6C26FE1083F8EBA4 /* libPods-Feeds4Free.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47051A931C99F4F700C338F9 /* Feeds4Free */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47051AAB1C99F4F700C338F9 /* Build configuration list for PBXNativeTarget "Feeds4Free" */;
+			buildPhases = (
+				7D6164B5B74D2FE41FE435D6 /* Check Pods Manifest.lock */,
+				47051A901C99F4F700C338F9 /* Sources */,
+				47051A911C99F4F700C338F9 /* Frameworks */,
+				47051A921C99F4F700C338F9 /* Resources */,
+				7001B3FEA1905AEEE3C5DD20 /* Embed Pods Frameworks */,
+				0034FE34291B9394086D275A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Feeds4Free;
+			productName = Feeds4Free;
+			productReference = 47051A941C99F4F700C338F9 /* Feeds4Free.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47051A8C1C99F4F700C338F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jsd;
+				TargetAttributes = {
+					47051A931C99F4F700C338F9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TWW7UPTWB8;
+					};
+				};
+			};
+			buildConfigurationList = 47051A8F1C99F4F700C338F9 /* Build configuration list for PBXProject "Feeds4Free" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47051A8B1C99F4F700C338F9;
+			productRefGroup = 47051A951C99F4F700C338F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47051A931C99F4F700C338F9 /* Feeds4Free */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47051A921C99F4F700C338F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47051AA71C99F4F700C338F9 /* LaunchScreen.storyboard in Resources */,
+				47051AA41C99F4F700C338F9 /* Assets.xcassets in Resources */,
+				47051AA21C99F4F700C338F9 /* Main.storyboard in Resources */,
+				4705ADBE1C9C3EEB00B50048 /* Localize.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0034FE34291B9394086D275A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feeds4Free/Pods-Feeds4Free-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7001B3FEA1905AEEE3C5DD20 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feeds4Free/Pods-Feeds4Free-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D6164B5B74D2FE41FE435D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47051A901C99F4F700C338F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4705ADC71C9C3FF500B50048 /* JDBaseCell.m in Sources */,
+				47051A9C1C99F4F700C338F9 /* AppDelegate.m in Sources */,
+				47051AB01C99F7FB00C338F9 /* RSS.xcdatamodeld in Sources */,
+				47051A991C99F4F700C338F9 /* main.m in Sources */,
+				4703FC901C9AD2A500D7617E /* JDFeedItemTableProvider.m in Sources */,
+				47051AD61C99FF6100C338F9 /* JDFeedTableProvider.m in Sources */,
+				4703FC8D1C9ABA0C00D7617E /* JDXMLParser.m in Sources */,
+				47051B051C9A075B00C338F9 /* JDCoreDataHelper.m in Sources */,
+				47051B001C9A04E000C338F9 /* FeedItem.m in Sources */,
+				47051AFF1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m in Sources */,
+				4705ADCC1C9C407E00B50048 /* NSString+DateFormats.m in Sources */,
+				47051AC81C99FA8E00C338F9 /* JDPreviewViewController.m in Sources */,
+				47051AFD1C9A04E000C338F9 /* Feed+CoreDataProperties.m in Sources */,
+				47F76D001C9B1920009F4C1F /* JDBaseTableViewController.m in Sources */,
+				47051ADC1C9A039F00C338F9 /* JDFeedCell.m in Sources */,
+				47051AC21C99FA4E00C338F9 /* JDFeedViewController.m in Sources */,
+				47051ACB1C99FA9E00C338F9 /* UIWebViewController.m in Sources */,
+				4703FC961C9ADC4F00D7617E /* JDFeedItemCell.m in Sources */,
+				47051AFE1C9A04E000C338F9 /* Feed.m in Sources */,
+				47051AD31C99FF3E00C338F9 /* JDBaseTableProvider.m in Sources */,
+				47051AC51C99FA6900C338F9 /* JDFeedItemViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47051AA01C99F4F700C338F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47051AA11C99F4F700C338F9 /* Base */,
+				4705ADBA1C9C3E4900B50048 /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47051AA51C99F4F700C338F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47051AA61C99F4F700C338F9 /* Base */,
+				4705ADBB1C9C3E4900B50048 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4705ADC01C9C3EEB00B50048 /* Localize.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4705ADBF1C9C3EEB00B50048 /* ru */,
+				4705ADC11C9C3EEC00B50048 /* Base */,
+			);
+			name = Localize.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47051AA91C99F4F700C338F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47051AAA1C99F4F700C338F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47051AAC1C99F4F700C338F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E32A13082839EA221793C6 /* Pods-Feeds4Free.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Feeds4Free/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JD.Feeds4Free;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47051AAD1C99F4F700C338F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF3844A96201CCFB1875BF4 /* Pods-Feeds4Free.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Feeds4Free/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JD.Feeds4Free;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47051A8F1C99F4F700C338F9 /* Build configuration list for PBXProject "Feeds4Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47051AA91C99F4F700C338F9 /* Debug */,
+				47051AAA1C99F4F700C338F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47051AAB1C99F4F700C338F9 /* Build configuration list for PBXNativeTarget "Feeds4Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47051AAC1C99F4F700C338F9 /* Debug */,
+				47051AAD1C99F4F700C338F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47051AAE1C99F7FB00C338F9 /* RSS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47051AAF1C99F7FB00C338F9 /* RSS.xcdatamodel */,
+			);
+			currentVersion = 47051AAF1C99F7FB00C338F9 /* RSS.xcdatamodel */;
+			path = RSS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 47051A8C1C99F4F700C338F9 /* Project object */;
+}

@@ -1,0 +1,36 @@
+
+/* Class = "UINavigationItem"; title = "Feed Items"; ObjectID = "CzA-oX-YUi"; */
+"CzA-oX-YUi.title" = "Новости";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FmR-YH-jxv"; */
+"FmR-YH-jxv.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Feeds"; ObjectID = "HBM-Uy-KNy"; */
+"HBM-Uy-KNy.title" = "Лента";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MUt-6l-s3b"; */
+"MUt-6l-s3b.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "N1v-Rv-cnF"; */
+"N1v-Rv-cnF.text" = "Label";
+
+/* Class = "UILabel"; text = "200"; ObjectID = "NJz-Jb-D8J"; */
+"NJz-Jb-D8J.text" = "200";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OI2-BQ-nLa"; */
+"OI2-BQ-nLa.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UMO-Be-MPs"; */
+"UMO-Be-MPs.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YAn-i4-b62"; */
+"YAn-i4-b62.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Web"; ObjectID = "siA-MK-t4g"; */
+"siA-MK-t4g.title" = "Web";
+
+/* Class = "UITabBarItem"; title = "Preview"; ObjectID = "tfb-wM-uwz"; */
+"tfb-wM-uwz.title" = "Preview";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uQc-0M-w7O"; */
+"uQc-0M-w7O.text" = "Title";
