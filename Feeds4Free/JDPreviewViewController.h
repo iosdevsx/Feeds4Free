@@ -14,10 +14,10 @@
 #warning set private
 @property (weak, nonatomic) IBOutlet UILabel *feedTitle;
 @property (weak, nonatomic) IBOutlet UILabel *feedDate;
-@property (weak, nonatomic) IBOutlet UILabel *feedText;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIImageView *feedImage;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeight;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textHeight;
+
 
 @property (strong, nonatomic) FeedItem* feedItem;
 

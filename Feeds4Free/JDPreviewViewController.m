@@ -26,7 +26,17 @@
                                                                     attributes:underline];
     [self.feedTitle setNeedsLayout];
     self.navigationItem.title = self.feedItem.title;
-    self.feedText.text = self.feedItem.summary;
+    //self.feedText.text = self.feedItem.summary;
+    self.textView.text = self.feedItem.summary;
+    //NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    //self.textView.attributedText = attributedString;
+    UIFont* font = [UIFont systemFontOfSize:17.0];
+    
+    NSMutableAttributedString * attributeString = [[NSMutableAttributedString alloc] initWithData:[self.feedItem.summary dataUsingEncoding:NSUnicodeStringEncoding] options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType} documentAttributes:nil error:nil];
+    [attributeString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, attributeString.length)];
+    self.textView.attributedText = attributeString;
+    self.textView.scrollEnabled = NO;
+    [self.textView scrollRangeToVisible:NSMakeRange(0, 0)];
     self.feedDate.text = [NSString formattedStringForDate:self.feedItem.date];
     
     UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
@@ -41,13 +51,13 @@
     if (self.feedItem.image)
     {
         self.imageHeight.constant = 180;
-        self.textHeight.constant = 200;
+        
         [self.feedImage sd_setImageWithURL:[NSURL URLWithString:self.feedItem.image]
                           placeholderImage:nil];
     } else
     {
         self.imageHeight.constant = 0;
-        self.textHeight.constant = 400;
+        
     }
 }
 
