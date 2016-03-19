@@ -6,26 +6,34 @@
 //  Copyright © 2016 jsd. All rights reserved.
 //
 
-#import "UIWebViewController.h"
+#import "JDWebViewController.h"
 
-@interface UIWebViewController ()
+@interface JDWebViewController ()
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *goBackItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *goForwardItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshItem;
 
 @end
 
-@implementation UIWebViewController
+@implementation JDWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = self.feedItem.title;
+    
     NSURL* url = [NSURL URLWithString:self.feedItem.link];
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
-    self.navigationItem.title = self.feedItem.title;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Private methods
 
 - (void) enableButtons
 {

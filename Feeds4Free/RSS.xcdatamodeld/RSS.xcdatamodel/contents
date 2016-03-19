@@ -18,7 +18,7 @@
         <relationship name="feed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Feed" inverseName="feedItems" inverseEntity="Feed" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Feed" positionX="-11" positionY="-24" width="128" height="103"/>
+        <element name="Feed" positionX="-11" positionY="21" width="128" height="103"/>
         <element name="FeedItem" positionX="-245" positionY="-54" width="128" height="178"/>
     </elements>
 </model>

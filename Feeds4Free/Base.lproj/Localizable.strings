@@ -1,0 +1,14 @@
+/* 
+  Localize.strings
+  Feeds4Free
+
+  Created by jsd on 18.03.16.
+  Copyright © 2016 jsd. All rights reserved.
+*/
+add_feed_title = "New Feed";
+add_feed_placeholder = "Type URL here...";
+cancel_button = "Cancel";
+add_button = "Add";
+alert_error_title = "Error";
+alert_error_duplicate_message = "Feed already added";
+alert_error_parse_message = "Can't add this feed";

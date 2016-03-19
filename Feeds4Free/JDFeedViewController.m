@@ -13,6 +13,8 @@
 #import "JDXMLParser.h"
 #import "Feed.h"
 
+static NSString* BaseFeed = @"http://lenta.ru/rss";
+
 @interface JDFeedViewController () <JDBaseTableDelegate, JDXMLParserDelegate>
 
 @property (strong, nonatomic) JDFeedTableProvider* provider;
@@ -41,6 +43,13 @@
     [super viewDidLoad];
     
     self.provider.items = [self.dataHelper allFeeds];
+    
+    //add sample feed to tableView, if items count 0
+    if ([self.provider.items count] == 0)
+    {
+        NSURL* url = [NSURL URLWithString:BaseFeed];
+        [self.parser beginParseWithURL:url];
+    }
     [self.tableView reloadData];
 }
 
@@ -57,6 +66,7 @@
 
 #pragma mark - Actions
 
+//Add new Feed to table
 - (IBAction)actionAddFeed:(UIBarButtonItem *)sender
 {
     [self showCreateFeedAlert];
@@ -107,12 +117,27 @@
 
 #pragma mark - JDXMLParser
 
-- (void) parseDidFinihWithFeed: (Feed*) feed
+- (void) parseDidFinishWithFeed: (Feed*) feed
 {
+    //check for duplicate
+    NSArray* titles = [self.provider.items valueForKey:@"title"];
+    if ([titles containsObject:feed.title])
+    {
+        [feed MR_deleteEntity];
+        [self showErrorAlertWithTitle:NSLocalizedString(@"alert_error_title", nil) andMessage:NSLocalizedString(@"alert_error_duplicate_message", nil)];
+    }
     [self reloadItems];
     [self reloadSections];
     
     [self.dataHelper save];
+}
+
+- (void) parseDidFinishWithError:(NSError *)error
+{
+    if (error)
+    {
+        [self showErrorAlertWithTitle:NSLocalizedString(@"alert_error_title", nil) andMessage:NSLocalizedString(@"alert_error_parse_message", nil)];
+    }
 }
 
 

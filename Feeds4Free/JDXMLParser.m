@@ -25,11 +25,13 @@
 
 #pragma mark - MWFeedParserDelegate
 
+//Create new Feed entity
 - (void)feedParserDidStart:(MWFeedParser *)parser
 {
     self.feed = [Feed MR_createEntity];
 }
 
+//Fill Feed entity fields based on parse result
 - (void)feedParser:(MWFeedParser *)parser didParseFeedInfo:(MWFeedInfo *)info
 {
     self.feed.title = info.title;
@@ -37,6 +39,7 @@
     self.feed.url = info.url.absoluteString;
 }
 
+//Create new FeedItem entity based on parse result
 - (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item
 {
     FeedItem* feedItem = [FeedItem MR_createEntity];
@@ -63,12 +66,13 @@
 
 - (void)feedParserDidFinish:(MWFeedParser *)parser
 {
-    [self.delegate parseDidFinihWithFeed:self.feed];
+    //fire delegate method when parsign is finished
+    [self.delegate parseDidFinishWithFeed:self.feed];
 }
 
 - (void)feedParser:(MWFeedParser *)parser didFailWithError:(NSError *)error
 {
-    NSLog(@"%@", [error localizedDescription]);
+    [self.delegate parseDidFinishWithError:error];
 }
 
 @end

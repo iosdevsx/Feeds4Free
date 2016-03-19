@@ -11,6 +11,7 @@
 
 @implementation Feed
 
+//return sorted feed items
 - (NSArray*) sortedItems
 {
     NSArray* feedItems = [self.feedItems allObjects];

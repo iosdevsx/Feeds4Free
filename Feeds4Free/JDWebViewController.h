@@ -1,5 +1,5 @@
 //
-//  JDPreviewViewController.h
+//  UIWebViewController.h
 //  Feeds4Free
 //
 //  Created by jsd on 16.03.16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FeedItem.h"
 
-@interface JDPreviewViewController : UIViewController
+@interface JDWebViewController : UIViewController
 
 @property (strong, nonatomic) FeedItem* feedItem;
 

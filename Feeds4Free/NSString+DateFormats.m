@@ -10,6 +10,7 @@
 
 @implementation NSString (DateFormats)
 
+//return formatted string from date
 + (NSString*) formattedStringForDate: (NSDate*) date
 {
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];

@@ -43,6 +43,7 @@
     self.parser.delegate = self;
     self.provider.delegate = self;
     
+    //insert "pull-to-refresh" mechanism
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refreshItems) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:self.refreshControl];
@@ -58,6 +59,8 @@
 }
 
 #pragma mark - Actions
+
+//Get new items from server, when user pull table
 - (void) refreshItems
 {
     NSURL* url = [NSURL URLWithString:self.feed.url];
@@ -67,9 +70,11 @@
 
 #pragma mark - JDXMLParserDelegate
 
-- (void) parseDidFinihWithFeed: (Feed*) feed
+- (void) parseDidFinishWithFeed: (Feed*) feed
 {
     NSArray* allItems = [self.feed.feedItems allObjects];
+    
+    //get dates and titles from all item, for exclude duplicates
     NSArray* allDates = [allItems valueForKey:@"date"];
     NSArray* allTitles = [allItems valueForKey:@"title"];
     
@@ -79,6 +84,7 @@
     [self.dataHelper deleteEntity:feed];
     for (FeedItem* item in updatedFeedItems)
     {
+        //if item already in database, then delete it, otherwise add to database
         if (![allDates containsObject:item.date] && ![allTitles containsObject:item.title])
         {
             item.feed = self.feed;
@@ -88,6 +94,7 @@
         }
     }
     
+    //save and reload
     [self.dataHelper save];
     
     [self reloadItems];
@@ -96,6 +103,7 @@
 }
 
 #pragma mark - JDBaseTableDelegate
+
 - (void) cellSelectedAtIndexPath: (nullable NSIndexPath*) indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -11,5 +11,6 @@
 @interface JDBaseTableViewController : UITableViewController
 
 - (void) showCreateFeedAlert;
+- (void) showErrorAlertWithTitle: (NSString*) title andMessage: (NSString*) message;
 
 @end

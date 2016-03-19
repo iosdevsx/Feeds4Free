@@ -24,6 +24,9 @@
 
 @protocol JDXMLParserDelegate <NSObject>
 
-- (void) parseDidFinihWithFeed: (Feed*) feed;
+- (void) parseDidFinishWithFeed: (Feed*) feed;
+
+@optional
+- (void) parseDidFinishWithError:(NSError *) error;
 
 @end

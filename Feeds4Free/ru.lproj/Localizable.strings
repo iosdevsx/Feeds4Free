@@ -1,0 +1,14 @@
+/* 
+  Localize.strings
+  Feeds4Free
+
+  Created by jsd on 18.03.16.
+  Copyright © 2016 jsd. All rights reserved.
+*/
+add_feed_title = "Добавить источник";
+add_feed_placeholder = "Введите ссылку...";
+cancel_button = "Отмена";
+add_button = "Добавить";
+alert_error_title = "Ошибка";
+alert_error_duplicate_message = "Источник уже добавлен";
+alert_error_parse_message = "Невозможно добавить этот источник";

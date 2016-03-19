@@ -20,7 +20,7 @@
 		47051AC21C99FA4E00C338F9 /* JDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC11C99FA4E00C338F9 /* JDFeedViewController.m */; };
 		47051AC51C99FA6900C338F9 /* JDFeedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC41C99FA6900C338F9 /* JDFeedItemViewController.m */; };
 		47051AC81C99FA8E00C338F9 /* JDPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AC71C99FA8E00C338F9 /* JDPreviewViewController.m */; };
-		47051ACB1C99FA9E00C338F9 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */; };
+		47051ACB1C99FA9E00C338F9 /* JDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051ACA1C99FA9E00C338F9 /* JDWebViewController.m */; };
 		47051AD31C99FF3E00C338F9 /* JDBaseTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AD21C99FF3E00C338F9 /* JDBaseTableProvider.m */; };
 		47051AD61C99FF6100C338F9 /* JDFeedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AD51C99FF6100C338F9 /* JDFeedTableProvider.m */; };
 		47051ADC1C9A039F00C338F9 /* JDFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051ADB1C9A039F00C338F9 /* JDFeedCell.m */; };
@@ -29,7 +29,7 @@
 		47051AFF1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AFA1C9A04E000C338F9 /* FeedItem+CoreDataProperties.m */; };
 		47051B001C9A04E000C338F9 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051AFC1C9A04E000C338F9 /* FeedItem.m */; };
 		47051B051C9A075B00C338F9 /* JDCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47051B041C9A075B00C338F9 /* JDCoreDataHelper.m */; };
-		4705ADBE1C9C3EEB00B50048 /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4705ADC01C9C3EEB00B50048 /* Localize.strings */; };
+		4705ADBE1C9C3EEB00B50048 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4705ADC01C9C3EEB00B50048 /* Localizable.strings */; };
 		4705ADC71C9C3FF500B50048 /* JDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705ADC61C9C3FF500B50048 /* JDBaseCell.m */; };
 		4705ADCC1C9C407E00B50048 /* NSString+DateFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705ADCB1C9C407E00B50048 /* NSString+DateFormats.m */; };
 		47F76D001C9B1920009F4C1F /* JDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F76CFF1C9B1920009F4C1F /* JDBaseTableViewController.m */; };
@@ -58,8 +58,8 @@
 		47051AC41C99FA6900C338F9 /* JDFeedItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFeedItemViewController.m; sourceTree = "<group>"; };
 		47051AC61C99FA8E00C338F9 /* JDPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPreviewViewController.h; sourceTree = "<group>"; };
 		47051AC71C99FA8E00C338F9 /* JDPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPreviewViewController.m; sourceTree = "<group>"; };
-		47051AC91C99FA9E00C338F9 /* UIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
-		47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		47051AC91C99FA9E00C338F9 /* JDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebViewController.h; sourceTree = "<group>"; };
+		47051ACA1C99FA9E00C338F9 /* JDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebViewController.m; sourceTree = "<group>"; };
 		47051AD11C99FF3E00C338F9 /* JDBaseTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseTableProvider.h; sourceTree = "<group>"; };
 		47051AD21C99FF3E00C338F9 /* JDBaseTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseTableProvider.m; sourceTree = "<group>"; };
 		47051AD41C99FF6100C338F9 /* JDFeedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFeedTableProvider.h; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		47051B041C9A075B00C338F9 /* JDCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCoreDataHelper.m; sourceTree = "<group>"; };
 		4705ADBA1C9C3E4900B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		4705ADBB1C9C3E4900B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		4705ADBF1C9C3EEB00B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localize.strings; sourceTree = "<group>"; };
-		4705ADC11C9C3EEC00B50048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localize.strings; sourceTree = "<group>"; };
+		4705ADBF1C9C3EEB00B50048 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4705ADC11C9C3EEC00B50048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4705ADC51C9C3FF500B50048 /* JDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseCell.h; sourceTree = "<group>"; };
 		4705ADC61C9C3FF500B50048 /* JDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseCell.m; sourceTree = "<group>"; };
 		4705ADCA1C9C407E00B50048 /* NSString+DateFormats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormats.h"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				47051AA31C99F4F700C338F9 /* Assets.xcassets */,
 				47051AA51C99F4F700C338F9 /* LaunchScreen.storyboard */,
 				47051AA81C99F4F700C338F9 /* Info.plist */,
-				4705ADC01C9C3EEB00B50048 /* Localize.strings */,
+				4705ADC01C9C3EEB00B50048 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			path = Feeds4Free;
@@ -201,8 +201,8 @@
 		47051AD01C99FAD000C338F9 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				47051AC91C99FA9E00C338F9 /* UIWebViewController.h */,
-				47051ACA1C99FA9E00C338F9 /* UIWebViewController.m */,
+				47051AC91C99FA9E00C338F9 /* JDWebViewController.h */,
+				47051ACA1C99FA9E00C338F9 /* JDWebViewController.m */,
 			);
 			name = Web;
 			sourceTree = "<group>";
@@ -390,7 +390,7 @@
 				47051AA71C99F4F700C338F9 /* LaunchScreen.storyboard in Resources */,
 				47051AA41C99F4F700C338F9 /* Assets.xcassets in Resources */,
 				47051AA21C99F4F700C338F9 /* Main.storyboard in Resources */,
-				4705ADBE1C9C3EEB00B50048 /* Localize.strings in Resources */,
+				4705ADBE1C9C3EEB00B50048 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +465,7 @@
 				47F76D001C9B1920009F4C1F /* JDBaseTableViewController.m in Sources */,
 				47051ADC1C9A039F00C338F9 /* JDFeedCell.m in Sources */,
 				47051AC21C99FA4E00C338F9 /* JDFeedViewController.m in Sources */,
-				47051ACB1C99FA9E00C338F9 /* UIWebViewController.m in Sources */,
+				47051ACB1C99FA9E00C338F9 /* JDWebViewController.m in Sources */,
 				4703FC961C9ADC4F00D7617E /* JDFeedItemCell.m in Sources */,
 				47051AFE1C9A04E000C338F9 /* Feed.m in Sources */,
 				47051AD31C99FF3E00C338F9 /* JDBaseTableProvider.m in Sources */,
@@ -494,13 +494,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4705ADC01C9C3EEB00B50048 /* Localize.strings */ = {
+		4705ADC01C9C3EEB00B50048 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4705ADBF1C9C3EEB00B50048 /* ru */,
 				4705ADC11C9C3EEC00B50048 /* Base */,
 			);
-			name = Localize.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
