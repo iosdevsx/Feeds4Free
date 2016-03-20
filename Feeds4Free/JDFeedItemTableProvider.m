@@ -54,4 +54,9 @@ static NSString* CellId = @"JDFeedItemCell";
     return [JDFeedItemCell heightForCell];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NO;
+}
+
 @end
