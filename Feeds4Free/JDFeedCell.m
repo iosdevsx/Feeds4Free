@@ -7,6 +7,7 @@
 //
 
 #import "JDFeedCell.h"
+#import "Feed.h"
 
 @implementation JDFeedCell
 
@@ -18,6 +19,16 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setupCellWithFeed:(Feed*)feed {
+    if (feed) {
+        self.title.text = feed.title;
+        self.summary.text = feed.summary;
+        NSArray* unreaded = [[feed.feedItems allObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isReaded = NO"]];
+        self.unreadedCountLabel.text = [NSString stringWithFormat:@"%ld", (unsigned long)[unreaded count]];
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
 }
 
 @end

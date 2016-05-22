@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "JDBaseCell.h"
 
+@class FeedItem;
 @interface JDFeedItemCell : JDBaseCell
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UIView *isReadedLabel;
+
+- (void)setupCellWithFeedItem:(FeedItem*)item;
 
 @end
