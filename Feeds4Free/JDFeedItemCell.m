@@ -7,6 +7,8 @@
 //
 
 #import "JDFeedItemCell.h"
+#import "FeedItem.h"
+#import "NSString+DateFormats.h"
 
 @implementation JDFeedItemCell
 
@@ -19,6 +21,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setupCellWithFeedItem:(FeedItem*)item {
+    if (item) {
+        self.title.text = item.title;
+        self.date.text = [NSString formattedStringForDate:item.date];
+        self.isReadedLabel.hidden = [item.isReaded boolValue];
+    }
 }
 
 @end

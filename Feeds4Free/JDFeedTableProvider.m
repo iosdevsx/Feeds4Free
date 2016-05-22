@@ -20,35 +20,21 @@ static NSString* CellId = @"JDFeedCell";
 
 #pragma mark -UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.items.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     JDFeedCell* cell = [tableView dequeueReusableCellWithIdentifier:CellId];
     Feed* feed = [self.items objectAtIndex:indexPath.row];
-    
-    NSArray* unreaded = [[feed.feedItems allObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isReaded = NO"]];
-    if (!cell)
-    {
+    if (!cell) {
         cell = [[JDFeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellId];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
-    if (feed != nil)
-    {
-        cell.title.text = feed.title;
-        cell.summary.text = feed.summary;
-        cell.unreadedCountLabel.text = [NSString stringWithFormat:@"%ld", (unsigned long)[unreaded count]];
-    }
-    
+    [cell setupCellWithFeed:feed];
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [JDFeedCell heightForCell];
 }
 
